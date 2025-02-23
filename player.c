@@ -13,4 +13,5 @@ void updatePlayer() {
     printf("Move left\n");
   }
 }
-void unload() { UnloadTexture(p1.playerTex); }
+void unload() {
+  UnloadTexture(p1.playerTex);
