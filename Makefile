@@ -1,2 +1,2 @@
 all:
-	gcc -o main main.c -lraylib -lm -lpthread -ldl -lrt -lX11
+	gcc -o main main.c player.c -lraylib -lm -lpthread -ldl -lrt -lX11
