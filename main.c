@@ -9,13 +9,19 @@ int main() {
   initPlayer(); // load player
   // main loop
   while (!WindowShouldClose()) {
-    BeginMode2D(cam);
     BeginDrawing();
+    BeginMode2D(cam);
     ClearBackground(SKYBLUE);
+    // camera properties
+    cam.offset = (Vector2){(float)SCREEN_WIDHT / 2, (float)SCREEN_HEIGHT / 2};
+    cam.rotation = 0;
+    cam.offset = (Vector2){p2.playerPos.x, p2.playerPos.y};
+    cam.zoom = 2.0f;
     updatePlayer(); // update player like movement
     EndDrawing();
     EndMode2D();
   }
+  unload();
   CloseWindow();
   return 0;
 }
