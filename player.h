@@ -7,7 +7,7 @@ typedef struct Player {
   Texture2D playerTex;
   Rectangle playerRect;
   Vector2 playerPos;
-  float playerVel;
+  Vector2 playerVel;
 } player;
 void initPlayer();
 void updatePlayer();
